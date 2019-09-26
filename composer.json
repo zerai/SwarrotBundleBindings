@@ -1,0 +1,32 @@
+{
+    "name": "zerai/swarrot-bundle-bindings",
+    "description": "Swarrot dispatcher and consumer bindings.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zerai",
+            "email": "teclaizerai@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "eventsauce/eventsauce": "^0.6.0",
+        "swarrot/swarrot-bundle": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "EventSauce\\Swarrot\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EventSauce\\Swarrot\\Tests\\": "tests"
+        }
+    },
+    "prefer-stable": true,
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.15",
+        "phpunit/phpunit": "^7.0"
+    }
+}
